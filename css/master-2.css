@@ -19,21 +19,33 @@ body{
 nav>.container-fluid{
     padding: 0 150px;
 }
+
+.main-area{
+    margin-top: 250px;
+}
 .bg2{
-    position: relative;
-    top: -150px;
-    left: -350px;
-    width: 60%;
-    height: 120vh;
-    background-color: rosybrown;
+    position: absolute;
+    top: -50px;
+    left: -300px;
     border-radius: 100%;
+    background: hotpink;
+    height: 120vh;
+    width: 120vh;
 
 }
-.left{
-    margin: 150px 0 0 1000px;
+.img{
+    z-index: 999;
+    margin: 200px 0 0;
 }
-.mid{
-    margin: 0 0 0 -700px;
+.bg3{
+    position: absolute;
+    top: -50px;
+    right: -300px;
+    border-radius: 100%;
+    background: gray;
+    height: 120vh;
+    width: 120vh;
+
 }
 #section01{
     background: url(../images/bg2.jpg);
