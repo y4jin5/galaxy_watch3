@@ -10,13 +10,13 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/master-2.css">
     <script src="js/wow.min.js"></script>
     
 </head>
 
-<body>
-    <nav class="navbar navbar-default">
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <nav class="navbar navbar-fixed-top navbar-inverse">
         <div class="container-fluid">
             <div class="navbar-header">
                 <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#myNavbar">
@@ -27,7 +27,7 @@
                 <a href="#" class="navbar-brand"><img src="images/svg-logo-black.svg" width="100px"></a>
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav navbar-right">
+                <ul class="nav navbar-nav navbar-right bold">
                     <li><a href="#">특장점</a></li>
                     <li><a href="#">스펙</a></li>
                     <li><a href="#">고객지원</a></li>
@@ -40,10 +40,21 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-sm-12 text-center">
-                    <h1 class="white-txt bold font wow fadeInUp">Watch, The Galaxy Watch</h1>
-                    <p class="white-txt wow fadeInUp" data-wow-delay="0.2s">스마트 워치의 다양한 기능과 손목 시계의 감성을 모두 담은<br>
-                        새로운 워치의 기준, 갤럭시 워치</p>
-                        <div class="bar wow fadeInUp" data-wow-delay="0.4s"></div>
+                    <h1 class="bold font wow fadeInUp">Watch,</h1>
+                    <div class="row">
+                    <div class="bg2 col-md-4">
+                        <img src="images/main02.png" alt="" class="main-img left">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="images/main03.png" alt="" class="main-img mid">
+                    </div>
+                    <div class="bg3 col-md-4">
+                        <img src="images/main01.png" alt="" class="main-img right">
+                    </div>
+                </div>
+                    <h1 class=" bold font wow fadeInUp">
+                        THE <br>
+                        GALAXY WATCH</h1>
                 </div>
             </div>
 
@@ -58,10 +69,11 @@
         <div class="container-fluid">
             <h1 class="text-center font2 bold">나만의 라이프 스타일의 완성</h1>
             <div class="row text-center">
-                <div class="col-md-4 content-img wow fadeInUp bg1" data-wow-delay="0.2s">
-                    <img src="images/ezgif-7-c67b14dab670-removebg-preview.png" alt="">
-                    <h1 class="bold">다양한 운동 트래킹</h1>
-                    <p class="width">모두가 운동의 중요성을 알지만 모두에게 운동이 쉬운 건 아니죠.
+
+                <div class="col-md-4 wow fadeInUp bg1 mr-3" data-wow-delay="0.2s">
+                    <img src="images/ezgif-7-c67b14dab670-removebg-preview.png" alt="" class=" content-img">
+                    <h2 class="bold">다양한 운동 트래킹</h2>
+                    <p class="width">
                         갤럭시 워치는 트레이너처럼 운동에 집중 할 수 있도록 도와줍니다.
                         39가지의 운동 종목 중 트래킹이 가능하며,
                         운동하는 동안 심박수와 칼로리를 측정해줍니다.
@@ -69,25 +81,26 @@
                         흐름이 끊기지 않고 혼자서도 체계적인 운동을
                         꾸준히 이어갈 수 있습니다.</p>
                 </div>
-                <div class="col-md-4 content-img wow fadeInUp bg2" data-wow-delay="0.4s">
-                    <img src="images/ezgif-7-b095d2b280ea-removebg-preview.png" alt="">
-                    <h1 class="bold">건강 모니터링</h1>
-                    <p class="width">스스로 확인하기 쉽지 않은 나의 건강 정보를
-                        확인할 수 있다면 얼마나 좋을까요?
-                        삼성 헬스 앱으로 스트레스 지수, 심박수와 칼로리
-                        그리고 더 많은 건강정보를 기록하고 체크할 수 있습니다.
-                        덕분에 건강 관리가 쉬워집니다.</p>
-                </div>
-                <div class="col-md-4 content-img wow fadeInUp bg3" data-wow-delay="0.6s">
-                    <img src="images/ezgif-7-e16db85e5e67-removebg-preview.png" alt="">
-                    <h1 class="bold">수면과 휴식 개선</h1>
-                    <p class="width">어쩌면 가장 중요한 건 쉬어가는 것일지도 모릅니다.
-                        잠을 제대로 못 이루거나 과도한 스트레스를 받을 때
-                        내 몸의 건강 정보를 체크 할 수 있습니다.
-                        당신이 잠든 사이 수면 상태를 측정해 4단계로 진단하고
-                        스트레스 지수가 높을 때엔 스트레스를 낮춰주는
-                        숨쉬기 가이드 제공으로 휴식을 도와줍니다.</p>
-                </div>
+
+               
+            <div class="col-md-4 wow fadeInUp bg1 mr-3" data-wow-delay="0.4s">
+                <img class="content-img" src="images/ezgif-7-b095d2b280ea-removebg-preview.png" alt="">
+                <h2 class="bold">건강 모니터링</h2>
+                <p class="width">스스로 확인하기 쉽지 않은 나의 건강 정보를
+                    확인할 수 있다면 얼마나 좋을까요?
+                    삼성 헬스 앱으로 스트레스 지수, 심박수와 칼로리
+                    그리고 더 많은 건강정보를 기록하고 체크할 수 있습니다.
+                    덕분에 건강 관리가 쉬워집니다.</p>
+            </div>
+            <div class="col-md-4 wow fadeInUp bg1" data-wow-delay="0.6s">
+                <img class=" content-img" src="images/ezgif-7-e16db85e5e67-removebg-preview.png" alt="">
+                <h2 class="bold">수면과 휴식 개선</h2>
+                <p class="width">어쩌면 가장 중요한 건 쉬어가는 것일지도 모릅니다.
+                    잠을 제대로 못 이루거나 과도한 스트레스를 받을 때
+                    내 몸의 건강 정보를 체크 할 수 있습니다.
+                    당신이 잠든 사이 수면 상태를 측정해 4단계로 진단하고
+                    스트레스 지수가 높을 때엔 스트레스를 낮춰주는
+                    숨쉬기 가이드 제공으로 휴식을 도와줍니다.</p>
             </div>
         </div>
     </section>
