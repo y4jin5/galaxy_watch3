@@ -21,7 +21,7 @@ nav>.container-fluid{
     top: -50px;
     left: -300px;
     border-radius: 100%;
-    background: rgb(253, 187, 187);
+    background: radial-gradient(circle, rgba(235,193,180,1) 0%, rgba(249,194,194,1) 35%, rgba(255,179,179,1) 100%);
     height: 120vh;
     width: 120vh;
     box-shadow: 0px 10px 15px rgba(0,0,0,0.3);
@@ -37,7 +37,7 @@ nav>.container-fluid{
     top: -50px;
     right: -300px;
     border-radius: 100%;
-    background: gray;
+    background: radial-gradient(circle, rgba(238,238,238,1) 0%, rgba(231,231,231,1) 35%, rgba(189,189,189,1) 100%);
     height: 120vh;
     width: 120vh;
     box-shadow: 00px 10px 15px rgba(0,0,0,0.3);
@@ -89,11 +89,11 @@ nav>.container-fluid{
     font-family: 'YESGothic-Bold';
     letter-spacing: -2px;
 }
-.col-sm-12>h1{
+#section01 .col-sm-12>h1{
     font-size: 40px;
     padding-top: 50px;
 }
-.col-sm-12>h1:first-child{
+#section01 .col-sm-12>h1:first-child{
     margin: 70px 0 -70px;
 }
 .col-sm-12>p{
@@ -219,10 +219,16 @@ nav>.container-fluid{
 }
 #section03{
     width: 100%;
-    height: 100vh;
+    padding: 5% 0;
     overflow: hidden;
 
 
+}
+.center{
+    color: #fff;
+    height: fit-content;
+    
+    padding: 5% 0;
 }
 #section03>h1{
     margin: 70px 0 0;
@@ -233,20 +239,29 @@ nav>.container-fluid{
     width: fit-content;
     margin: 0 auto;
 }
-#section04 .con01{
+.con01{
     width: 100%;
-    height: 190vh;
+    padding: 20% 0;
     background: url(../images/galaxy-watch3_highlights_overview-step04_s.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 #section04 .con02{
     width: 77%
 }
 
-
+.back{
+    margin-top: 500px;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0,0,0,0.5)
+}
 @import "lesshat";
 
 .ba-slider {
@@ -322,7 +337,14 @@ nav>.container-fluid{
     background-repeat: no-repeat;
     background-position: center;
     background-size: 70%;
-
+}
+#section05{
+    padding: 5% 0 ;
+}
+#section05 h1{
+    margin: 70px 0 0;
+    font-size: 40px;
+    line-height: 60px;
 }
 #section06>h1{
     margin: 70px 0 0;
@@ -330,8 +352,8 @@ nav>.container-fluid{
     line-height: 60px;
 }
 #section06 img{
-    width: 100%;
-    margin: 0 auto;
+    width: 80%;
+    margin: 0 10%;
 }
 #section07{
     width: 100%;
