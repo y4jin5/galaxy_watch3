@@ -43,7 +43,7 @@ nav>.container-fluid{
     box-shadow: 00px 10px 15px rgba(0,0,0,0.3);
 }
 #section01{
-    background: url(../images/bg2.jpg);
+    /* background: url(../images/bg2.jpg); */
     width: 100%;
     height: 100vh;
     overflow: hidden;
@@ -153,18 +153,7 @@ nav>.container-fluid{
     margin: 0 auto;
 
 }
-#section02>div>div{
-    display: flex;
-    align-items: right;
-}
 
-.mt{
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
 .bg1{
     transition:all 0.5s ease-in-out; 
     -webkit-transition:all 0.5s ease-in-out;
@@ -385,6 +374,121 @@ nav>.container-fluid{
 .m0a{
     width: 33.33%;
     margin: 0 auto;
+}
+.swiper-container {
+    width: 100%;
+    height: 100%;
+
+  }
+.place{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 0 0 0 200px;
+}
+#section01 span{
+    font-size: 40px;
+    font-family: 'YESGothic-Regular';
+}
+#section01 h1{
+    font-size: 80px;
+}
+.main-bg1{
+    width: 100%;
+    height: 95vh;
+    background: url('../images/galaxy-watch3_highlights_classic-45mm-black.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+.main-bg2{
+    width: 100%;
+    height: 95vh;
+    background: url('../images/galaxy-watch3_highlights_classic-45mm-silver.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+.main-bg3{
+    width: 100%;
+    height: 95vh;
+    background: url('../images/galaxy-watch3_highlights_classic-41mm-bronze.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+  * {box-sizing: border-box}
+
+/* Style the tab */
+.tab {
+  float: right;
+  background-color: #f1f1f1;
+  width: 10%;
+  height: 300px;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+}
+#London{
+    display: flex;
+}
+.tabcontent img{
+    width: 50%;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  width: 70%;
+  border-left: none;
+  height: 300px;
 }
 @media(max-width: 767px){
     .content-img{

@@ -10,7 +10,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/master-2.css">
+    <link rel="stylesheet" href="css/master-3.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="js/wow.min.js"></script>
     
 </head>
@@ -38,31 +40,62 @@
 
     <section id="section01">
         <div class="container-fluid">
-            <div class="row z-index-2">
-                <div class="col-sm-12 text-center">
-                    <h1 class="bold font wow fadeInDown">Watch,</h1>
-                    <div class="img ">
-                    <img src="images/main02.png" alt="" class="main-img">
-                    <img src="images/main03.png" alt="" class="main-img">
-                    <img src="images/main01.png" alt="" class="main-img">
-                    </div>
-                    <div class="row back z-index-1">
-                    <div class="bg2 col-md-4">
-                        
-                    </div>
-
-                    <div class="bg3 col-md-4">
-     
-                    </div>
-                </div>
-                    <h1 class=" bold font wow fadeInUp">
-                        THE <br>
-                        GALAXY WATCH</h1>
-                </div>
-            </div>
-
+  <!-- Swiper -->
+  <div class="swiper-container">
+    <div class="swiper-wrapper font2">
+      <div class="swiper-slide">
+          <div class="main-bg1">
+          <h1 class="text-left place">
+              GALAXY <br>
+              WATCH3 <br>
+              <span>Black, 45mm</span>
+          </h1>
         </div>
-        <div class="row sec01-img wow fadeInUp">
+    </div>
+      <div class="swiper-slide">
+          <div class="main-bg2">
+        <h1 class=" text-left place">
+            GALAXY <br>
+            WATCH3 <br>
+            <span>Silver, 45mm </span>
+        </h1>
+    </div>
+    </div>
+      <div class="swiper-slide">
+          <div class="main-bg3">
+        <h1 class=" text-left place">
+            GALAXY <br>
+            WATCH3 <br>
+            <span>Bronze, 41mm</span>
+        </h1>
+    </div>
+    </div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+    <!-- Add Arrows -->
+  </div>
+
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
         </div>
     </section>
     <!-- section 01 -->
@@ -72,44 +105,53 @@
         <div class="container-fluid">
             <h1 class="text-center font2 bold">나만의 라이프 스타일의 완성</h1>
             <div class="row">
-                <div class="col-sm-6 def" id="here">
-
-                </div>
-            <div class="col-sm-6 text-right mt">
-
-                <div class="col-md-12 wow fadeInUp bg1 " data-wow-delay="0.2s" onmouseover="ChangeColor('1');" style="cursor:pointer;">
-                    <h2 class="bold width">다양한 운동 트래킹</h2>
-                    <p class="width">
-                        갤럭시 워치는 트레이너처럼 운동에 집중 할 수 있도록 도와줍니다.
+            <div class="col-sm-12 text-right">
+                <div class="tab">
+                    <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">London</button>
+                    <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
+                    <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+                    <button class="tablinks" onclick="openCity(event, 'Seoul')" > Seoul</button>
+                  </div>
+                  
+                  <div id="London" class="tabcontent">
+                    <img src="images/sec02-bg-1.jpg" alt="" class="pull-left">
+                    <h3>다양한 운동 트래킹</h3>
+                    <p>                        갤럭시 워치는 트레이너처럼 운동에 집중 할 수 있도록 도와줍니다.
                         39가지의 운동 종목 중 트래킹이 가능하며,
                         운동하는 동안 심박수와 칼로리를 측정해줍니다.
                         또한 하나의 운동이 끝나고 다음 운동으로 이어할 수 있어
                         흐름이 끊기지 않고 혼자서도 체계적인 운동을
                         꾸준히 이어갈 수 있습니다.</p>
-                </div>
-
-               
-            <div class="col-md-12 wow fadeInUp bg1" data-wow-delay="0.4s" onmouseover="ChangeColor('2');" style="cursor:pointer;">
-                <h2 class="bold width">건강 모니터링</h2>
-                <p class="width">스스로 확인하기 쉽지 않은 나의 건강 정보를
-                    확인할 수 있다면 얼마나 좋을까요?
-                    삼성 헬스 앱으로 스트레스 지수, 심박수와 칼로리
-                    그리고 더 많은 건강정보를 기록하고 체크할 수 있습니다.
-                    덕분에 건강 관리가 쉬워집니다.</p>
-            </div>
-            <div class="col-md-12 wow fadeInUp bg1" data-wow-delay="0.6s" onmouseover="ChangeColor('3');" style="cursor:pointer;">
-                <h2 class="bold width">수면과 휴식 개선</h2>
-                <p class="width">어쩌면 가장 중요한 건 쉬어가는 것일지도 모릅니다.
-                    잠을 제대로 못 이루거나 과도한 스트레스를 받을 때
-                    내 몸의 건강 정보를 체크 할 수 있습니다.
-                    당신이 잠든 사이 수면 상태를 측정해 4단계로 진단하고
-                    스트레스 지수가 높을 때엔 스트레스를 낮춰주는
-                    숨쉬기 가이드 제공으로 휴식을 도와줍니다.</p>
-            </div>
-            <div class="col-md-12 wow fadeInUp bg1" data-wow-delay="0.8s" onmouseover="ChangeColor('4');" style="cursor:pointer;">
-                <h2 class="bold width">방수와 충격에 강한 내구성</h2>
-                <p class="width">비가 와도, 충격을 받아도 걱정할 필요 없습니다.
-                    갤럭시 워치는 5 ATM* 방수 성능과 Military 표준* 내구성을 갖춰 극한 상황에서도 문제없습니다.</p>
+                  </div>
+                  
+                  <div id="Paris" class="tabcontent">
+                    <img src="images/sec02-bg-2.jpg" alt="" class="pull-left">
+                    <h3>건강 모니터링</h3>
+                    <p>스스로 확인하기 쉽지 않은 나의 건강 정보를
+                        확인할 수 있다면 얼마나 좋을까요?
+                        삼성 헬스 앱으로 스트레스 지수, 심박수와 칼로리
+                        그리고 더 많은 건강정보를 기록하고 체크할 수 있습니다.
+                        덕분에 건강 관리가 쉬워집니다.</p>
+                  </div>
+                  
+                  <div id="Tokyo" class="tabcontent">
+                    <img src="images/sec02-bg-3.jpg" alt="" class="pull-left">
+                    <h3>수면과 휴식 개선</h3>
+                    <p>어쩌면 가장 중요한 건 쉬어가는 것일지도 모릅니다.
+                        잠을 제대로 못 이루거나 과도한 스트레스를 받을 때
+                        내 몸의 건강 정보를 체크 할 수 있습니다.
+                        당신이 잠든 사이 수면 상태를 측정해 4단계로 진단하고
+                        스트레스 지수가 높을 때엔 스트레스를 낮춰주는
+                        숨쉬기 가이드 제공으로 휴식을 도와줍니다.</p>
+                  </div>
+                  <div id="Seoul" class="tabcontent">
+                    <img src="images/sec02-bg-4.jpg" alt="" class="pull-left">
+                    <h3>방수와 충격에 강한 내구성</h3>
+                    <p>
+                     비가 와도, 충격을 받아도 걱정할 필요 없습니다.
+                            갤럭시 워치는 5 ATM* 방수 성능과 Military 표준* 내구성을 갖춰 극한 상황에서도 문제없습니다.</p>
+                  </div>
+                
             </div>
         </div>
     </div>
