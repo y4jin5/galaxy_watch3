@@ -128,8 +128,6 @@ nav>.container-fluid{
     width: 100%;
     height: 100vh;
     overflow: hidden;
-
-
 }
 #section02>div>h1{
     margin: 70px 0 30px;
@@ -161,7 +159,9 @@ nav>.container-fluid{
     padding: 3% 0;
     margin: 1% 0;
     border-radius: 20px;
-    /* box-shadow: 00px 2px 5px rgba(0,0,0,0.3); */
+}
+.tab img{
+    width: 40px;
 }
 .def {    width: 50%;
     position: relative;
@@ -224,19 +224,12 @@ nav>.container-fluid{
     width: 100%;
     padding: 5% 0;
     overflow: hidden;
-
-
 }
 .center{
     color: #fff;
     height: fit-content;
     
     padding: 5% 0;
-}
-#section03>h1{
-    margin: 70px 0 0;
-    font-size: 40px;
-    line-height: 60px;
 }
 .carousel{
     width: fit-content;
@@ -252,13 +245,9 @@ nav>.container-fluid{
     background-attachment: fixed;
 }
 
-#section04 .con02{
-    width: 77%
-}
-
 .back{
     margin-top: 500px;
-    width: 80%;
+    width: 55%;
     margin: auto;
     display: flex;
     align-items: center;
@@ -344,19 +333,14 @@ nav>.container-fluid{
 #section05{
     padding: 5% 0 ;
 }
-#section05 h1{
-    margin: 70px 0 0;
-    font-size: 40px;
-    line-height: 60px;
-}
-#section06>h1{
-    margin: 70px 0 0;
-    font-size: 40px;
-    line-height: 60px;
-}
 #section06 img{
     width: 80%;
     margin: 0 10%;
+}
+.tit{
+    margin: 70px 0 0;
+    font-size: 40px;
+    line-height: 60px;
 }
 #section07{
     width: 100%;
@@ -365,11 +349,6 @@ nav>.container-fluid{
 #section07>div{
     width: 100%;
     margin: 0 -80px 0 80px;
-}
-#section07>h1{
-    margin: 70px 0 0;
-    font-size: 40px;
-    line-height: 60px;
 }
 .m0a{
     width: 33.33%;
@@ -446,10 +425,9 @@ nav>.container-fluid{
 
 /* Style the tab */
 .tab {
-  float: right;
-  background-color: #f1f1f1;
   width: 10%;
-  height: 300px;
+  height: 800px;
+  margin: 150px 0 0 -400px;
 }
 
 /* Style the buttons that are used to open the tab content */
@@ -464,65 +442,88 @@ nav>.container-fluid{
   text-align: left;
   cursor: pointer;
   transition: 0.3s;
+  background-color: rgba(0,0,0,0.05);
 }
-#London{
-    display: flex;
-}
+
 .tabcontent img{
     width: 50%;
+    margin: -50px 0 0 -100px;
 }
 
 /* Change background color of buttons on hover */
 .tab button:hover {
   background-color: #ddd;
+  box-shadow: 2px 0px 7px rgba(0,0,0,0.3);
 }
 
 /* Create an active/current "tab button" class */
-.tab button.active {
-  background-color: #ccc;
+.tab button.active:first-child {
+  background-color: rgb(146, 226, 92);
 }
+.tab button.active:nth-child(2) {
+    background-color: rgb(226, 108, 92);
+  }
+  .tab button.active:nth-child(3) {
+    background-color: rgb(166, 92, 226);
+  }
+  .tab button.active:last-child {
+    background-color: rgb(92, 184, 226);
+  }
 
 /* Style the tab content */
 .tabcontent {
-  float: left;
-  padding: 0px 12px;
-  width: 70%;
+  padding: 0px 20px;
+  width: 100%;
   border-left: none;
-  height: 300px;
+  height: 800px;
 }
+#section02 .tabs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#section02 .text-area{
+    width: 70%;
+    margin: 100px 0 0;
+}
+#columns{
+    column-width:350px;
+    column-gap: 15px;
+  }
+  #columns figure{
+    display: inline-block;
+    margin:0;
+    margin-bottom: 15px;
+  }
+  #columns figure img{
+    width:100%;
+  }
+  #columns figure figcaption{
+    padding:10px;
+    margin-top:11px;
+  }
 @media(max-width: 767px){
-    .content-img{
-        width: 100%;
-        height: 700px;
-        margin: 0.5% 0;
+    #section01 .place{
+        margin: 0 0 0 30px;
+    }
+    #section01 h1{
+        font-size: 40px;
     }
     nav>.container-fluid{
         padding: 0 20px;
     }
-    #section01 .container-fluid{
-        width: 50%;
-        display: flex;
-
+    #section01 span{
+        font-size: 25px;
+        font-family: 'YESGothic-Regular';
     }
-    .main-img{
-        width: 190px;
+    .main-bg1{
+        background-position: 65%;
     }
-    .main-img:first-child{
-        position: relative;
-        top: 30px;
-        left: -150px;
-        width: 180px;
+    .main-bg2{
+        background-position: 65%;
     }
-    .main-img:nth-child(2){
-        position: relative;
-        top: -250px;
-        z-index: 99;
-    }
-    .main-img:last-child{
-        position: relative;
-        top: -520px;
-        right: -150px;
-        width: 180px;
+    .main-bg3{
+        background-position: 65%;
     }
     .up{
         position: relative;
