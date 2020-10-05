@@ -1,0 +1,527 @@
+/* @font-face { font-family: 'NEXON Lv1 Gothic OTF Bold'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF Bold.woff') format('woff'); font-weight: normal; font-style: normal; } */
+@font-face { font-family: 'YESGothic-Bold'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_13@1.0/YESGothic-Bold.woff') format('woff'); font-weight: normal; font-style: normal;}
+@font-face { font-family: 'YESGothic-Regular'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_13@1.0/YESGothic-Regular.woff') format('woff'); font-weight: normal; font-style: normal; }
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body{
+    font-family: 'YESGothic-Regular';
+    color: #131313;
+    background: #fdfdfdfd;
+}
+
+nav>.container-fluid{
+    padding: 0 150px;
+}
+
+.main-area{
+    margin-top: 250px;
+}
+.bg2{
+    mix-blend-mode: multiply;
+    position: absolute;
+    top: -50px;
+    left: -300px;
+    border-radius: 100%;
+    background: radial-gradient(circle, rgba(235,193,180,1) 0%, rgba(249,208,194,1) 35%, rgba(255,208,179,1) 100%);
+    height: 120vh;
+    width: 120vh;
+    box-shadow: 0px 10px 15px rgba(0,0,0,0.3);
+}
+.img{
+    position: relative;
+    z-index: 999;
+    margin: 200px 0 0;
+}
+.bg3{
+    mix-blend-mode: multiply;
+    position: absolute;
+    top: -50px;
+    right: -300px;
+    border-radius: 100%;
+    background: radial-gradient(circle, rgb(129, 129, 129) 0%, rgb(109, 109, 109) 35%, rgb(75, 75, 75) 100%);
+    height: 120vh;
+    width: 120vh;
+    box-shadow: 00px 10px 15px rgba(0,0,0,0.3);
+}
+#section01{
+    /* background: url(../images/bg2.jpg); */
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.col-sm-12>p{
+    line-height: 50px;
+    font-size: 50px;
+}
+.main-img{
+    width: 250px;
+}
+#section01>.container-fluid{
+    padding: 0;
+}
+.ani{
+    animation-name: blink;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+}
+@keyframes blink{
+    0%  {opacity: 0;}
+    50% {opacity: 1;}
+    100%{opacity: 0;}
+}
+.iot{
+    background: url(../images/sec-feature-galaxy-watch-r800-112797100-1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 79%;
+}
+.navbar{
+    
+    font-size: 16px;
+    margin: 0;
+    background: none;
+    border: none;
+    transition:all 0.8s ease-in-out; 
+    -webkit-transition:all 0.8s ease-in-out;
+}
+.navbar-inverse{
+    background: #333;
+}
+.white-txt{
+    color: white;
+}
+.bold{
+    font-weight: 600;
+}
+
+.font{
+    font-family: 'Work Sans', sans-serif;
+}
+.font2{
+    font-family: 'YESGothic-Bold';
+    letter-spacing: -2px;
+}
+#section01 .col-sm-12>h1{
+    font-size: 40px;
+    padding-top: 50px;
+}
+#section01 .col-sm-12>h1:first-child{
+    margin: 70px 0 -70px;
+}
+.col-sm-12>p{
+    line-height: 30px;
+    font-size: 17px;
+    font-family: 'Eoe_Zno_L';
+}
+.bar{
+    width: 1px;
+    height: 80px;
+    background: white;
+    margin: 50px auto 0;
+}
+#section02>div{
+    padding: 0 10%;
+}
+#section02{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+#section02>div>h1{
+    margin: 70px 0 30px;
+    font-size: 40px;
+    line-height: 100px;
+}
+.text-area{
+    width: 40%;
+    margin: 10% 10%;
+    
+}
+.content-img{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition:all 0.8s ease-in-out; 
+    -webkit-transition:all 0.8s ease-in-out;
+    margin: 0 auto;
+
+}
+
+.bg1{
+    transition:all 0.5s ease-in-out; 
+    -webkit-transition:all 0.5s ease-in-out;
+    color: #ccc;
+    padding: 3% 0;
+    margin: 1% 0;
+    border-radius: 20px;
+}
+.tab img{
+    width: 40px;
+}
+.def {    width: 50%;
+    position: relative;
+    background: url(../images/sec02-bg-1.jpg);
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition:all 0.5s ease-in-out; 
+    -webkit-transition:all 0.5s ease-in-out;}
+.img1 {    width: 50%;
+    position: relative;
+    background: url(../images/sec02-bg-1.jpg);
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition:all 0.5s ease-in-out; 
+    -webkit-transition:all 0.5s ease-in-out;}
+.img2 {    width: 50%;
+    position: relative;
+    background: url(../images/sec02-bg-2.jpg);
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition:all 0.5s ease-in-out; 
+    -webkit-transition:all 0.5s ease-in-out;}
+.img3 {    width: 50%;
+    position: relative;
+    background: url(../images/sec02-bg-3.jpg);
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition:all 0.5s ease-in-out; 
+    -webkit-transition:all 0.5s ease-in-out;}
+    .img4 {    width: 50%;
+        position: relative;
+        background: url(../images/sec02-bg-4.jpg);
+        overflow: hidden;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        transition:all 0.5s ease-in-out; 
+        -webkit-transition:all 0.5s ease-in-out;}
+.bg1:hover{
+    color: #333;
+    box-shadow: 00px 2px 5px rgba(0,0,0,0.2);
+}
+.content-img>img{
+    align-items: center;
+    width: 100%;
+}
+.width{
+    width: 85%;
+    margin: 15px auto 0;
+}
+#section03{
+    width: 100%;
+    padding: 5% 0;
+    overflow: hidden;
+}
+.center{
+    color: #fff;
+    height: fit-content;
+    
+    padding: 5% 0;
+}
+.carousel{
+    width: fit-content;
+    margin: 0 auto;
+}
+.con01{
+    width: 100%;
+    padding: 20% 0;
+    background: url(../images/galaxy-watch3_highlights_overview-step04_s.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.back{
+    margin-top: 500px;
+    width: 55%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0,0,0,0.5)
+}
+@import "lesshat";
+
+.ba-slider {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+ 
+.ba-slider img {
+    width: 100%;
+    display:block;
+}
+ 
+.resize {
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 100%;
+    width: 50%;
+    overflow: hidden;
+}
+
+
+.handle { /* Thin line seperator */
+  position:absolute; 
+  left:50%;
+  top:0;
+  bottom:0;
+  width:4px;
+  margin-left:-2px;
+ 
+  background: rgba(0,0,0,.5);
+  cursor: ew-resize;
+}
+ 
+.handle:after {  /* Big orange knob  */
+    position: absolute;
+    top: 50%;
+    width: 64px;
+    height: 64px;
+    margin: -32px 0 0 -32px;
+ 
+    content:'\21d4';
+    color:white;
+    font-weight:bold;
+    font-size:36px;
+    text-align:center;
+    line-height:64px;
+ 
+    background: #357ad4; /* @orange */
+    border:1px solid #428ee6; /* darken(@orange, 5%) */
+    border-radius: 50%;
+    transition:all 0.3s ease;
+    box-shadow:
+      0 2px 6px rgba(0,0,0,.3), 
+      
+      inset 0 60px 50px -30px #357ad4; /* lighten(@orange, 20%)*/ 
+}
+
+.draggable:after {
+    width: 48px;
+    height: 48px;
+    margin: -24px 0 0 -24px;
+    line-height:48px;
+    font-size:30px;
+}
+.bg4{
+    width: 100%;
+    margin: -1050px 0 0;
+    height: 100vh;
+    background: url(../images/sec-feature-galaxy-watch-r800-112797100bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70%;
+}
+#section05{
+    padding: 5% 0 ;
+}
+#section06 img{
+    width: 80%;
+    margin: 0 10%;
+}
+.tit{
+    margin: 70px 0 0;
+    font-size: 40px;
+    line-height: 60px;
+}
+#section07{
+    width: 100%;
+    overflow: hidden;
+}
+#section07>div{
+    width: 100%;
+    margin: 0 -80px 0 80px;
+}
+.m0a{
+    width: 33.33%;
+    margin: 0 auto;
+}
+.swiper-container {
+    width: 100%;
+    height: 100%;
+
+  }
+.place{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 0 0 0 200px;
+}
+#section01 span{
+    font-size: 40px;
+    font-family: 'YESGothic-Regular';
+}
+#section01 h1{
+    font-size: 80px;
+}
+.main-bg1{
+    width: 100%;
+    height: 95vh;
+    background: url('../images/galaxy-watch3_highlights_classic-45mm-black.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+.main-bg2{
+    width: 100%;
+    height: 95vh;
+    background: url('../images/galaxy-watch3_highlights_classic-45mm-silver.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+.main-bg3{
+    width: 100%;
+    height: 95vh;
+    background: url('../images/galaxy-watch3_highlights_classic-41mm-bronze.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+  * {box-sizing: border-box}
+
+/* Style the tab */
+.nav-tabs img{
+    width: 50px;
+}
+.nav-tabs{
+    width: fit-content !important;
+    margin: 0 auto;
+    
+}
+.tab-content{
+    padding: 15% 0 30%;
+    background: #000;
+    color: #fff;
+}
+.txt{
+    margin: -150px auto 150px;
+    width: 50%;
+}
+.tab-content img{
+    margin: 0 30%;
+    width: 40%;
+}
+#section02 .tabs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#section02 .text-area{
+    width: 70%;
+    margin: 100px 0 0;
+}
+#columns{
+    column-width:350px;
+    column-gap: 15px;
+  }
+  #columns figure{
+    display: inline-block;
+    margin:0;
+    margin-bottom: 15px;
+  }
+  #columns figure img{
+    width:100%;
+  }
+  #columns figure figcaption{
+    padding:10px;
+    margin-top:11px;
+  }
+@media(max-width: 767px){
+    #section01 .place{
+        margin: 0 0 0 30px;
+    }
+    #section01 h1{
+        font-size: 40px;
+    }
+    nav>.container-fluid{
+        padding: 0 20px;
+    }
+    #section01 span{
+        font-size: 25px;
+        font-family: 'YESGothic-Regular';
+    }
+    .main-bg1{
+        background-position: 65%;
+    }
+    .main-bg2{
+        background-position: 65%;
+    }
+    .main-bg3{
+        background-position: 65%;
+    }
+    .up{
+        position: relative;
+        top: -550px;
+    }
+    #section02 .mt{
+        display: flex;
+        flex-direction: column;
+    }
+    .bg2{
+        mix-blend-mode: multiply;
+        position: absolute;
+        top: -50px;
+        left: -800px;
+        border-radius: 100%;
+        background: radial-gradient(circle, rgba(235,193,180,1) 0%, rgba(249,208,194,1) 35%, rgba(255,208,179,1) 100%);
+        height: 100vh;
+        width: 100vh;
+        box-shadow: 0px 10px 15px rgba(0,0,0,0.3);
+    }
+
+    .bg3{
+        mix-blend-mode: multiply;
+        position: absolute;
+        top: -50px;
+        right: -800px;
+        border-radius: 100%;
+        background: radial-gradient(circle, rgb(129, 129, 129) 0%, rgb(109, 109, 109) 35%, rgb(75, 75, 75) 100%);
+        height: 100vh;
+        width: 100vh;
+        box-shadow: 00px 10px 15px rgba(0,0,0,0.3);
+    }
+}
