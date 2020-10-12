@@ -7,16 +7,28 @@
     <meta property="og:description" content="갤럭시 워치3는 스마트워치 이상의 능력을 발휘합니다. 스마트폰만큼 다양한 기능, 건강을 위해 설계된 첨단 성능과 클래식하고 고급스러운 디자인 ..."/>
     <meta property="og:image" content="/images/opimg.jpg"/>
     <meta property="og:title" content="Galaxy watch3"/>
+    <link rel="shortcut icon" href="images/favi.png" />
+<link rel="apple-touch-icon" href="images/favi.ico"/>
     <title>bootstrap</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/master-4.css">
+    <link rel="stylesheet" href="css/master-6.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/a0cad2890b.js" crossorigin="anonymous"></script>
     <script src="js/wow.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+    $( function() {
+      $( "#accordion" ).accordion({
+        collapsible: true
+      });
+    } );
+    </script>
     
 </head>
 
@@ -42,66 +54,18 @@
     </nav>
 
     <section id="section01">
-        <div class="container-fluid">
-  <!-- Swiper -->
-  <div class="swiper-container">
-    <div class="swiper-wrapper font2">
-      <div class="swiper-slide">
-          <div class="main-bg1">
-          <h1 class="text-left place">
-              <span>THE</span>
-              GALAXY <br>
-              WATCH3 <br>
-              <span>Black, 45mm</span>
-          </h1>
-        </div>
-    </div>
-      <div class="swiper-slide">
-          <div class="main-bg2">
-        <h1 class=" text-left place">
-            <span>THE</span>
-            GALAXY <br>
-            WATCH3 <br>
-            <span>Silver, 45mm </span>
-        </h1>
-    </div>
-    </div>
-      <div class="swiper-slide">
-          <div class="main-bg3">
-        <h1 class=" text-left place">
-            <span>THE</span>
-            GALAXY <br>
-            WATCH3 <br>
-            <span>Bronze, 41mm</span>
-        </h1>
-    </div>
-    </div>
-    </div>
-    <!-- Add Pagination -->
-    <div class="swiper-pagination"></div>
-    <!-- Add Arrows -->
+        <div class="container-fluid text-center">
+  <h1><span>THE</span><br>
+GALAXY <br>
+WATCH 3</h1>
+<p>더 알아보기</p>
+<div class="arrow-area">
+<div class="arrow"></div>
+<div class="arrow"></div>
+<div class="arrow"></div>
+</div>
+
   </div>
-
-
-  <!-- Initialize Swiper -->
-  <script>
-    var swiper = new Swiper('.swiper-container', {
-      spaceBetween: 30,
-      centeredSlides: true,
-      autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-      },
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-    });
-  </script>
         </div>
     </section>
     <!-- section 01 -->
@@ -110,50 +74,62 @@
     <section id="section02">
         <div class="container-fluid">
             <h1 class="text-center font2 bold tit">나만의 라이프 스타일의 완성</h1>
+            <p class="text-center subtxt">우측탭을 클릭해 갤럭시 워치만의 기능을 살펴보세요</p>
             <div class="row">
-                <ul class="nav nav-tabs">
-                    <li class="active"><a data-toggle="tab" href="#home"><img src="images/running.png" alt=""></a></li>
-                    <li><a data-toggle="tab" href="#menu1"><img src="images/heartbeat.png" alt=""></a></li>
-                    <li><a data-toggle="tab" href="#menu2"><img src="images/rest.png" alt=""></a></li>
-                    <li><a data-toggle="tab" href="#menu3"><img src="images/drop.png" alt=""></a></li>
+                <ul class="nav nav-tabs ">
+                    <li class="active"><a data-toggle="tab" href="#home"><i class="fas fa-running"></i></a></li>
+                    <li><a data-toggle="tab" href="#menu1"><i class="fas fa-heartbeat"></i></a></li>
+                    <li><a data-toggle="tab" href="#menu2"><i class="fas fa-bed"></i></a></li>
+                    <li><a data-toggle="tab" href="#menu3"><i class="fas fa-tint"></i></a></li>
                   </ul>
                   
                   <div class="tab-content">
-                    <div id="home" class="tab-pane fade in active">
+                    <div id="home" class="tab-pane fade in active tab-bg-1">
                         <div class="txt text-center">
                         <h2>다양한 운동 트래킹</h2>
-                        <p>갤럭시 워치는 트레이너처럼 운동에 집중 할 수 있도록 도와줍니다.
+                        <p class="subtxt">갤럭시 워치는 트레이너처럼 운동에 집중 할 수 있도록 도와줍니다.
                             39가지의 운동 종목 중 트래킹이 가능하며,
                             운동하는 동안 심박수와 칼로리를 측정해줍니다.
                             또한 하나의 운동이 끝나고 다음 운동으로 이어할 수 있어
                             흐름이 끊기지 않고 혼자서도 체계적인 운동을
                             꾸준히 이어갈 수 있습니다.</p>
                         </div>
-                        <img src="images/galaxy-watch3_highlights_fit_s.jpg" alt="">
+                        <img src="images/galaxy-watch3_highlights_fit_s.png" alt="">
 
                     </div>
-                    <div id="menu1" class="tab-pane fade">
+                    <div id="menu1" class="tab-pane fade tab-bg-2">
                         <div class="txt text-center">
                         <h2>건강 모니터링</h2>
-                        <p>스스로 확인하기 쉽지 않은 나의 건강 정보를
+                        <p class="subtxt">스스로 확인하기 쉽지 않은 나의 건강 정보를
                             확인할 수 있다면 얼마나 좋을까요?<br>
                             삼성 헬스 앱으로 스트레스 지수, 심박수와 칼로리
-                            그리고 더 많은 건강정보를 기록하고 체크할 수 있습니다.<br>
+                            그리고 더 많은 건강정보를 기록하고 체크할 수 있습니다.
                             덕분에 건강 관리가 쉬워집니다.</p>
                         </div>
-                        <img src="images/galaxy-watch3_highlights_stress_s.jpg" alt="">
+                        <img src="images/galaxy-watch3_highlights_stress_s.png" alt="">
 
                     </div>
-                    <div id="menu2" class="tab-pane fade">
-                        <h3></h3>
-                      <p>Some content in menu 2.</p>
-                        <img src="images/galaxy-watch3_highlights_sleep_s.jpg" alt="">
+                    <div id="menu2" class="tab-pane fade tab-bg-3">
+                        <div class="txt text-center">
+                        <h2>수면과 휴식 개선</h2>
+                      <p class="subtxt">어쩌면 가장 중요한 건 쉬어가는 것일지도 모릅니다.
+                        잠을 제대로 못 이루거나 과도한 스트레스를 받을 때
+                        내 몸의 건강 정보를 체크 할 수 있습니다.
+                        당신이 잠든 사이 수면 상태를 측정해 4단계로 진단하고
+                        스트레스 지수가 높을 때엔 스트레스를 낮춰주는
+                        숨쉬기 가이드 제공으로 휴식을 도와줍니다.</p>
+                    </div>
+                        <img src="images/galaxy-watch3_highlights_sleep_s.png" alt="">
                       
                     </div>
-                    <div id="menu3" class="tab-pane fade">
-                        <h3></h3>
-                        <p>Some content in menu 2.</p>
-                        <img src="images/drop.png" alt="">
+                    <div id="menu3" class="tab-pane fade tab-bg-4">
+                        <div class="txt text-center">
+                        <h2>방수와 충격에 강한 내구성</h2>
+                        <p class="subtxt">비가 와도, 충격을 받아도 걱정할 필요 없습니다. <br>
+                            갤럭시 워치는 5 ATM* 방수 성능과 Military 표준* 내구성을 갖춰 극한 상황에서도 문제없습니다.</p>
+                            <br>
+                    </div>
+                            <img src="images/galaxy-watch3_highlights_water_s.png" alt="">
                       </div>
                   </div>
         </div>
@@ -162,69 +138,42 @@
     <!-- section 02 -->
 
 
-    <section id="section03">
-        <h1 class="text-center font2 bold tit">스트랩 교체로 스타일 변신</h1>
-        <p class="text-center"> 손목과 하나된 듯 부드러운 기본 스트랩과 다양한 스트랩으로
-            매일 옷을 갈아 입듯 색다른 스타일을 연출해보세요.</p>
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-            <!-- Indicators -->
-            <ol class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#myCarousel" data-slide-to="1"></li>
-                <li data-target="#myCarousel" data-slide-to="2"></li>
-                <li data-target="#myCarousel" data-slide-to="3"></li>
-                <li data-target="#myCarousel" data-slide-to="4"></li>
-                <li data-target="#myCarousel" data-slide-to="5"></li>
-            </ol>
-    
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner">
-                <div class="item active">
-                    <img src="images/sec-feature-galaxy-watch-r800-112788434.webp" alt="Los Angeles">
+
+    <section id="section06">
+
+        <div class="container-fluid">
+            <div class="row first-1">
+                <div class="col-sm-5">
+
                 </div>
-    
-                <div class="item">
-                    <img src="images/sec-feature-galaxy-watch-r800-112788435.webp" alt="Chicago">
-                </div>
-    
-                <div class="item">
-                    <img src="images/sec-feature-galaxy-watch-r800-112788436.webp" alt="New York">
-                </div>
-    
-                <div class="item">
-                    <img src="images/sec-feature-galaxy-watch-r800-112788437.webp" alt="New York">
-                </div>
-    
-                <div class="item">
-                    <img src="images/sec-feature-galaxy-watch-r800-112788438.webp" alt="New York">
-                </div>
-    
-                <div class="item">
-                    <img src="images/sec-feature-galaxy-watch-r800-112788439.webp" alt="New York">
+                <div class="col-sm-7">
+                    <h1 class="text-right font2 bold tit">최고의 샷을 위한 파트너</h1>
+                    <p class="text-right subtxt pull-right"> 갤럭시 워치3 티타늄에는 골프 유저를 위한 SMART CADDIE 앱이 기본으로 제공됩니다. 생생하고 선명한 코스 맵과 듀얼 아크 거리, 터치 타겟팅, 샷 히스토리 등의 코스 공략 기능을 통해 전 세계 4만여 개 코스를 이용할 수 있습니다.</p>
+                   
                 </div>
             </div>
-    
-            <!-- Left and right controls -->
-            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="right carousel-control" href="#myCarousel" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right"></span>
-                <span class="sr-only">Next</span>
-            </a>
+            <div class="row second-1">
+                <div class="col-sm-7">
+                    <h1 class="text-left font2 bold tit">언제나 어디서나</h1>
+                    <p class="text-left subtxt">
+                        갤럭시 워치에는 GPS가 내장되어 있어 당신의 위치를 확인하고 목적지까지 가는 길을 찾아줍니다.
+                        고도계와 기압계까지 제공합니다.
+                        </p>
+                </div>
+                <div class="col-sm-5">
+
+                </div>
+            </div>
         </div>
     </section>
-    <!-- section 03 -->
 
-
-    <section id="section04" class="wow fadeIn con01" data-wow-duration="3s">
-        <div class="container-fluid ">
+    <section id="section04" class="wow fadeIn " data-wow-duration="1s">
+        <div class="container con01">
             <div class="row back">
                 <div class="col-sm-12 center">
-                <h1 class="text-center font2 bold">취향대로 조합하는
+                <h1 class="text-center font2 bold tit">취향대로 조합하는
                     워치페이스</h1> <br>
-                <p class="text-center"> 매일 새로운 워치페이스를 연출하세요. <br> 시계 디자이너와 협업한 워치 페이스부터 트렌디한 느낌까지 코디에 맞춰 40여 가지 스타일을 자유롭게 조합할 수 있습니다. <br> 즐겨 찾는 앱을 워치페이스에 설정하면 언제든 필요한 정보를 바로 확인할 수 있죠.</p>
+                <p class="text-center subtxt"> 매일 새로운 워치페이스를 연출하세요. <br> 시계 디자이너와 협업한 워치 페이스부터 트렌디한 느낌까지 코디에 맞춰 40여 가지 스타일을 자유롭게 조합할 수 있습니다. <br> 즐겨 찾는 앱을 워치페이스에 설정하면 언제든 필요한 정보를 바로 확인할 수 있죠.</p>
                 </div>
             </div>
         </div>
@@ -232,14 +181,29 @@
     </section>
     <!-- section 04 -->
 
+    <section id="section03">
+        <h1 class="text-center font2 bold tit">스트랩 교체로 스타일 변신</h1>
+        <p class="text-center subtxt"> 손목과 하나된 듯 부드러운 기본 스트랩과 다양한 스트랩으로
+            매일 옷을 갈아 입듯 색다른 스타일을 연출해보세요.</p>
+        <div class="container" style="padding: 0;">
+            <div class="strap">
+                <img src="images/Untitled-2.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- section 03 -->
+
+
 
     <section id="section05">
-        <div class="container">
+        <div class="sec05-bg"><div></div></div>
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-sm-12">
                     <h1 class="text-center font2 bold tit">데일리 브리핑</h1>
-                    <p class="text-center"> 하루의 시작과 끝을 함께합니다.
-                        매일 아침 날씨, 스케쥴, 리마인더 등 필요한 정보를 알려주며,<br>
+                    <p class="text-center subtxt"> 하루의 시작과 끝을 함께합니다.
+                        매일 아침 날씨, 스케쥴, 리마인더 등
+                        <br>필요한 정보를 알려주며,
                         자기 전에는 완료되지 못한 리마인더와 그 날의 활동량을 알려줍니다.</p>
 
                 </div>
@@ -257,24 +221,9 @@
     </section>
     <!-- section 05 -->
 
-    <section id="section06">
-        <h1 class="text-center font2 bold tit">집안 기기를 컨트롤 하는 IoT</h1>
-        <p class="text-center"> 홈 IoT기능으로 집 안의 TV, 로봇 청소기, 에어컨 등의 기기를 갤럭시 워치 하나로,<br>
-            쉽게 컨트롤할 수 있습니다. 진정한 IoT 환경을 구축하세요.
-
-            </p>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-sm-12 iot">
-                    <img src="images/sec-feature-galaxy-watch-r800-112797100-1.png" alt="" class="ani">
-                </div>
-            </div>
-        </div>
-    </section>
-
     <section id="section07">
         <h1 class="text-center font2 bold tit">갤럭시 워치를 위한 수많은 앱</h1>
-        <p class="text-center"> 이미 갤럭시 워치를 위한 수많은 전용 앱이 준비되어 있습니다. <br>
+        <p class="text-center subtxt"> 이미 갤럭시 워치를 위한 수많은 전용 앱이 준비되어 있습니다. <br>
             필요한 앱을 찾아서 설치하고 더 스마트한 삶을 누리세요.
 
             </p>
@@ -296,69 +245,114 @@
             </div>
         </div>
     </section>
-    <section id="section08">
-        <h1 class="text-center font2 bold tit">착용해야 비로소 보이는 아름다움</h1>
-        <p class="text-center"> 제품만 봐서는 알 수 없는 아름다움. 
-            사진으로 느껴보세요
 
-            </p>
-        <div class="container">
-            <div id="columns">
-                <figure>
-                  <img src="images/sec08-img-01.jpeg">
-                </figure>
-           
-                <figure>
-                  <img src="images/sec08-img-02.jpg">
-                </figure>
-           
-                <figure>
-                  <img src="images/sec08-img-03.jpg">
-                </figure>
-           
-                <figure>
-                  <img src="images/sec08-img-04.jpg">
-                </figure>
-           
-                <figure>
-                  <img src="images/sec08-img-05.jpg">
-                </figure>
-           
-                <figure>
-                  <img src="images/sec08-img-06.jpg">
-                </figure>
-           
-                <figure>
-                  <img src="images/sec08-img-07.jpg">
-                </figure>    
-           
-                <figure>
-                  <img src="images/sec08-img-08.jpg">
-                </figure>
-           
-                <figure>
-                  <img src="images/sec08-img-09.webp">
-                </figure>   
-                <figure>
-                    <img src="images/sec08-img-10.webp">
-                  </figure>  
+    
+    
 
-              </div>
-            
-            <script>
-                $(function(){
-                    $('.grid').masonry({
-                        columnWidth: 200,
-                        itemSelector: '.grid-item',
-                        gutter: 10,
-                    });
-                });
-            </script>
+    <section id="section09">
+        <div class="container-fluid">
+            <div class="row first">
+                <div class="col-sm-5">
+                    
+                </div>
+                <div class="col-sm-7">
+                    <h3>Galaxy Watch3</h3>
+                    <h2 class="bold">
+                        <div class="span"></div>
+                        ㅤBRONZE | 42mm
+                    </h2>
+                    <br>
+                    <button>구매하기</button>
+                </div>
+            </div>
+            <div class="row second">
+                <div class="col-sm-7">
+                    <h3>Galaxy Watch3</h3>
+                    <h2 class="bold">
+                        <div class="span2"></div>
+                        ㅤSLIVER | 42mm
+                    </h2>
+                    <br>
+                    <button>구매하기</button> 
+                </div>
+                <div class="col-sm-5">
+                    
+                </div>
+            </div>
+            <div class="row third">
+                <div class="col-sm-5">
+                    
+                </div>
+                <div class="col-sm-7">
+                    <h3>Galaxy Watch3</h3>
+                    <h2 class="bold">
+                        <div class="span3"></div>
+                        ㅤBLACK | 45mm
+                    </h2>
+                    <br>
+                    <button>구매하기</button>
+                </div>
+            </div>
         </div>
     </section>
+    <section id="section10">
+        <div class="container-fluid">
+        <div id="accordion">
+            <h3 class="spec text-center">전체 스펙 보기</h3>
+            <div class="spec-txt">
+            <div class="row">
+                <div class="col-sm-4">네트워크 <br>
+                    인프라 <br>
+                    Bluetooth, Wi-Fi</div>
+                <div class="col-sm-4"></div>
+                <div class="col-sm-4"></div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">연결 <br>
+                    ANT+ <br>
+                    No <br>
+                    블루투스 버전 <br>
+                    Bluetooth v5.0</div>
+                <div class="col-sm-4">
+                    위치 기술 <br>
+GPS,Glonass,Beidou,Galileo <br>
+NFC <br>
+Yes <br>
+                </div>
+                <div class="col-sm-4">
+                    Wi-Fi <br>
+802.11 b/g/n 2.4 GHz <br>
+블루투스 프로파일 <br>
+A2DP,AVRCP,HFP,HSP <br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">운영체제 <br>
+                    Tizen</div>
+                <div class="col-sm-4"></div>
+                <div class="col-sm-4"></div>
+            </div>
+        </div>
+            </div>
+        </div>
+    </section>
+    
+    <button onclick="topFunction()" id="scrollTopBtn" title="Go to top">Top</button>
+    <button onclick="topFunction()" id="scrollTopBtnMob" title="Go to top">Top</button>
 
     <script src="js/main.js"></script>
     <script src="js/masonry.pkgd.min.js"></script>
+    <script>
+                function scrollFunction() {
+        var $element = matchMedia("screen and (min-width: 786px)").matches ? document.getElementById("scrollTopBtn") : document.getElementById("scrollTopBtnMob");
+        $element.style.display = (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) ? 'block' : 'none';
+        };
+
+        function topFunction() {
+            $('html,body').animate({ scrollTop: 0 }, 500);
+        };
+  
+    </script>
 </body>
 
 </html>

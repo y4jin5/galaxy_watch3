@@ -15,19 +15,6 @@ new WOW().init();
 //     });
 //     }
 
-function ChangeColor(t)
-{
-    if( t == '1' ){       
-        document.getElementById('here').className = "img1";       
-    }else if( t == '2' ) {
-        document.getElementById('here').className = "img2";
-    }else if( t == '3' ) {
-        document.getElementById('here').className = "img3";
-    }else if( t == '4' ) {
-        document.getElementById('here').className = "img4";
-    }
-}  
-
 
 // Call & init
 $(document).ready(function(){
@@ -128,5 +115,8 @@ $(document).ready(function(){
     document.getElementById(cityName).style.display = "block";
     evt.currentTarget.className += " active";
   }
-  document.getElementById("defaultOpen").click();
-  
+  document.getElementById("defaultOpen").click()
+
+
+  window.onscroll = function() {scrollFunction()};
+
